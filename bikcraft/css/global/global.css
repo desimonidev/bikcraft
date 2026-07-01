@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding-bottom: 600px;
-    color: #111111;
+    color: var(--c11);
 }
 
 h1, ul, p {

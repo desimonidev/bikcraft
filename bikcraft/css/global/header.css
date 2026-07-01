@@ -21,11 +21,8 @@
 }
 
 .header a {
-    font-family: 'Poppins';
-    font-weight: 400;
     display: inline-block;
     padding: 16px 0px;
-    font-size: 18px;
     position: relative;
 }
 
@@ -34,7 +31,7 @@
     display: block;
     height: 2px;
     width: 0%;
-    background: #ffffff;
+    background: var(--c0);
     margin-top: 4px;
     transition: 0.3s;
     position: absolute;

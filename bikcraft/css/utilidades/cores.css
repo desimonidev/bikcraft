@@ -12,7 +12,11 @@
     --c10: #2E2E2E;
     --c11: #111111;
     --c12: #000000;
-    --cp1: #ffbb00;
+    --cp1: #FFBB00;
+    --cp2: #E4A30B;
+    --cp3: #A66F00;
+    --cp4: #664400;
+    --cp5: #332200;
 }
 
 .c0 {
@@ -69,4 +73,20 @@
 
 .cp1 {
     color: var(--cp1);
+}
+
+.cp2 {
+    color: var(--cp2);
+}
+
+.cp3 {
+    color: var(--cp3);
+}
+
+.cp4 {
+    color: var(--cp4);
+}
+
+.cp5 {
+    color: var(--cp5);
 }
