@@ -1,0 +1,74 @@
+.introducao-bg {
+    background: var(--c12);
+    color: var(--c0);
+    box-shadow: inset 0 -120px var(--c0);
+}
+
+.introducao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;
+}
+
+.introducao-conteudo {
+    align-self: end;
+    padding-bottom: 200px;
+}
+
+.introducao img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 4px;
+}
+
+
+/* SOLUÇÃO 1 PARA "VAZAR" IMAGEM */
+/*.introducao-imagem {
+    margin-bottom: -120px; /* usamos o -120px para a imagem, que está dentro da div, "vazar" pra fora do container
+}
+
+.introducao img {
+    object-fit: cover;
+    height: 100%; /* somando com o cover, a imagem ao reduzir, não quebra, não fica wide
+}
+*/
+
+
+
+
+/* SOLUÇÃO 2 PARA "VAZAR IMAGEM */
+/* Usar box-shadow no .introducao-bg, box-shadow: inset 0px -120px #ffffff; inset é pra começar, valor negativo é pra começar debaixo ao invés de cima. */
+
+
+
+.introducao h1 {
+    margin-bottom: 32px;
+}
+
+.introducao p {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 800px) { /*Diminuindo tudo para mobile, colocamos paddingtop pra não grudar com o menu, boxshadow alteramos para -60px ao invés de -120px para não "vazar" tanto a imagem.*/
+    .introducao-bg {
+        background: var(--c11);
+        padding-top: 40px;
+        box-shadow: inset 0px -60px var(--c0);
+    }
+    .introducao { /*Trocamos o site para apenas uma coluna, para telas de mobile*/
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .introducao-conteudo { /*Retiramos padding dos textos do menu*/
+        padding-bottom: 0px;
+    }
+    .introducao h1 {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    .introducao img {
+        height: 300px;
+        width: 100%;
+    }
+}
